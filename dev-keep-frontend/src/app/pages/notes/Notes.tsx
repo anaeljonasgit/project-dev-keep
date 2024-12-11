@@ -1,3 +1,12 @@
+import { Link } from "react-router-dom";
+
 export const Notes = () => {
-  return <h1>Notes</h1>;
+  return (
+    <div>
+      <h1>Notes</h1>
+      <Link to="/lp">
+        <button>Ir para Landing Page</button>
+      </Link>
+    </div>
+  );
 };
