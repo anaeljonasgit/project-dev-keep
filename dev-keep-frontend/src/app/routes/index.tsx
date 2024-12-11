@@ -1,11 +1,13 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
+import { Notes } from "../pages";
+
 export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/acessar" element={<h1>Hello</h1>} />
-        <Route path="*" element={<Navigate to="/acessar" />} />
+        <Route path="/" element={<Notes />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
   );
